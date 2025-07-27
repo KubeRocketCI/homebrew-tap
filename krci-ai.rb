@@ -5,21 +5,21 @@
 class KrciAi < Formula
   desc "KubeRocketAI CLI - AI-as-Code framework for Your Product Development"
   homepage "https://github.com/KubeRocketCI/kuberocketai"
-  version "0.21.0"
+  version "0.21.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KubeRocketCI/kuberocketai/releases/download/v0.21.0/krci-ai_Darwin_x86_64.tar.gz"
-      sha256 "3eef79a9d233949811dd73e390a1dad23720bbbb1a4b17cf92b5b993d78879b0"
+      url "https://github.com/KubeRocketCI/kuberocketai/releases/download/v0.21.1/krci-ai_Darwin_x86_64.tar.gz"
+      sha256 "77abe6f948b6dd5b263dd9c0040d3e1a476a759f1abf4f6a69eb9b45079fc0e6"
 
       def install
         bin.install "krci-ai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KubeRocketCI/kuberocketai/releases/download/v0.21.0/krci-ai_Darwin_arm64.tar.gz"
-      sha256 "16e0624d51efdb449067b78b8d728c2107133197b064407f933b557e1b6e683b"
+      url "https://github.com/KubeRocketCI/kuberocketai/releases/download/v0.21.1/krci-ai_Darwin_arm64.tar.gz"
+      sha256 "5ecc1dabe6a65888ad92af8f8bbf8b2cdd0326b3d35e943595eadb8c3673439e"
 
       def install
         bin.install "krci-ai"
@@ -29,15 +29,15 @@ class KrciAi < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/KubeRocketCI/kuberocketai/releases/download/v0.21.0/krci-ai_Linux_x86_64.tar.gz"
-      sha256 "b2753b073d2ab4199a29f9ca20e5368b3032728937c0564d688af7ac83d65d1a"
+      url "https://github.com/KubeRocketCI/kuberocketai/releases/download/v0.21.1/krci-ai_Linux_x86_64.tar.gz"
+      sha256 "1c6f9b9763ceb2f81e4ee5fc867378fc4b2c917c9195a68a19257d0045520f8e"
       def install
         bin.install "krci-ai"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/KubeRocketCI/kuberocketai/releases/download/v0.21.0/krci-ai_Linux_arm64.tar.gz"
-      sha256 "c548c7a1bc8733c22293551052f62796d26bdf769f082f64bb44d6117e95dd6c"
+      url "https://github.com/KubeRocketCI/kuberocketai/releases/download/v0.21.1/krci-ai_Linux_arm64.tar.gz"
+      sha256 "6ff9520ffd1fbba7bea6f113c742890adcdd37065b1a6e4f9c3d8de7240f1548"
       def install
         bin.install "krci-ai"
       end
