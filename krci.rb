@@ -5,21 +5,21 @@
 class Krci < Formula
   desc "KubeRocketCI CLI - Command-line interface for the KubeRocketCI platform"
   homepage "https://github.com/KubeRocketCI/cli"
-  version "0.8.0"
+  version "0.8.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KubeRocketCI/cli/releases/download/v0.8.0/krci_Darwin_x86_64.tar.gz"
-      sha256 "11ea2ec92b71278a0f9b53eaca189264712ff7005240f6d1c2f55409494d250b"
+      url "https://github.com/KubeRocketCI/cli/releases/download/v0.8.1/krci_Darwin_x86_64.tar.gz"
+      sha256 "419790fab6697d3ee7f5709b74dd4d17dcce879931ddd84c30d709b974972397"
 
       define_method(:install) do
         bin.install "krci"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KubeRocketCI/cli/releases/download/v0.8.0/krci_Darwin_arm64.tar.gz"
-      sha256 "d5d849c760aafe4a7e588da14afba108fcadde7f84f317537f233d9d26dc222d"
+      url "https://github.com/KubeRocketCI/cli/releases/download/v0.8.1/krci_Darwin_arm64.tar.gz"
+      sha256 "6cbc4ecc9754dc8f7eee68522c3d9053c4e40154a20d5cc16a677a25905324ee"
 
       define_method(:install) do
         bin.install "krci"
@@ -29,15 +29,15 @@ class Krci < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KubeRocketCI/cli/releases/download/v0.8.0/krci_Linux_x86_64.tar.gz"
-      sha256 "c299f5b9f296214fdeec8f92eca634cc824ef7e8a24efdb7a41c61693f9840a5"
+      url "https://github.com/KubeRocketCI/cli/releases/download/v0.8.1/krci_Linux_x86_64.tar.gz"
+      sha256 "16013bc1fc93390d7a66f628c4fa72ebfb3e8c7b3ee9600abd3c9a1eff8c083b"
       define_method(:install) do
         bin.install "krci"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KubeRocketCI/cli/releases/download/v0.8.0/krci_Linux_arm64.tar.gz"
-      sha256 "e3a21ba293d6545dba720aa88c12e50c0289206c5a1dc0d969d3d466dc19e940"
+      url "https://github.com/KubeRocketCI/cli/releases/download/v0.8.1/krci_Linux_arm64.tar.gz"
+      sha256 "1ffd775914222b2bacc1e766ecfed708b25675df94b8ffc111aa677bfae1e922"
       define_method(:install) do
         bin.install "krci"
       end
